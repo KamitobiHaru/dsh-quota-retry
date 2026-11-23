@@ -1,0 +1,31 @@
+{
+  "name": "dsh-quota-retry",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "DSH bundle: retry provider quota and HTTP 429 failures with the provider's own connection-error retry policy, tunable from the command line.",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "set-retries": "node scripts/set-retries.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./env": "./env.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "env.js",
+    "cordis.patch.yml",
+    "scripts",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}

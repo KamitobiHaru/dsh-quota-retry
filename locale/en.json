@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Quota retry",
+    "description": "Retry provider quota and HTTP 429 failures with the same policy connection errors use; the retry count is tunable from the command line."
+  }
+}

@@ -1,0 +1,4 @@
+# dsh-quota-retry — one Host plugin row; no Client half.
+- insert:
+    - id: quota-retry
+      name: 'dsh-quota-retry'
